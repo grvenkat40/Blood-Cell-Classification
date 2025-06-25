@@ -4,6 +4,7 @@ services:
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: python app.py
+    runtime: python3.10
     envVars:
       - key: PORT
         value: 10000
