@@ -20,8 +20,8 @@
 # pillow
 # gdown
 
-flask
-tensorflow-cpu
+flask==2.3.3
+tensorflow-cpu==2.10.0
 opencv-python-headless
 numpy
 pillow
