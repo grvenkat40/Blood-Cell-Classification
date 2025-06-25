@@ -1,7 +1,18 @@
-flask
-tensorflow
-opencv-python-headless
-numpy
-pillow
+# Core dependencies
+tensorflow==2.10.0
+numpy==1.23.5
+pandas==1.5.3
+opencv-python==4.8.1.78
+scikit-learn==1.2.2
+matplotlib==3.7.1
+gdown==4.7.1
+
+# Flask web app
+Flask==2.3.3
+werkzeug==2.3.7
+
+# Optional: for deployment on platforms like Render
+gunicorn==21.2.0
+
 gdown
 
