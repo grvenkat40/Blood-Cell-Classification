@@ -1,0 +1,5 @@
+# Ignore model file
+Blood_Cell_PRED.h5
+
+# Ignore uploads folder content
+static/uploads/

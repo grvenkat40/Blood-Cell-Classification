@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>HamatoVision-Blood Cell Classifier by venkat</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+    </head>
+    <body>
+        <header class="main-header">
+            <h1 class="header-title">🔬 HematoVision</h1>
+            <p class="header-subtitle">AI-powered Blood Cell Classification using VGG16 and Transfer Learning</p>
+        </header>
+        <marquee direction="left">This model is capable of predicting single image at a time.</marquee>
+        <!-- <h2><span style="color: rgb(215, 15, 255);font-weight: bolder;">HematoVision</span></h2> -->
+        <h2 style="font-family: DMSans;">Advanced Blood Cell Classification Using Transfer Learning</h2>
+        <p><span style="color: rgb(215, 15, 255);text-decoration: underline;font-weight: bolder;">HematoVision</span> aims to develop an accurate and efficient model for classifying blood cells by employing transfer learning techniques.
+            Utilizing a dataset of 12,000 annotated blood cell images, categorized into distinct classes such as <span style="color: rgb(215, 15, 255);font-weight: bolder;">Eosinophils, Lymphocytes, Monocytes, and Neutrophils</span>, the project leverages pre-trained convolutional neural networks (CNNs) to expedite training and improve classification accuracy. 
+            Transfer learning allows the model to benefit from pre-existing knowledge of image features, significantly enhancing its performance and reducing computational costs.
+            This approach provides a reliable and scalable tool for pathologists and healthcare professionals, ensuring precise and efficient blood cell classification.</p>
+        <h3>Example of Cells Images</h2>
+        <section class="img">
+            <div id="cell-img">
+                <img id="cell" src="../static/asserts/BloodImage_00018.jpg" id="img">
+                <img id="cell" src="../static/asserts/BloodImage_00016.jpg" id="img">
+                <img id="cell" src="../static/asserts/BloodImage_00017.jpg" id="img">
+                <img id="cell" src="../static/asserts/BloodImage_00021.jpg" id="img">
+                <img id="cell" src="../static/asserts/BloodImage_00023.jpg" id="img">
+                <img id="cell" src="../static/asserts/BloodImage_00023.jpg" id="img">
+                <img id="cell" src="../static/asserts/BloodImage_00044.jpg" id="img">
+                <img id="cell" src="../static/asserts/BloodImage_00045.jpg" id="img">
+                <img id="cell" src="../static/asserts/BloodImage_00046.jpg" id="img">
+                <img id="cell" src="../static/asserts/BloodImage_00049.jpg" id="img">
+                <img id="cell" src="../static/asserts/BloodImage_00050.jpg" id="img">
+                <img id="cell" src="../static/asserts/BloodImage_00052.jpg" id="img">
+            </div>
+        </section>
+        <h2>Upload Cell Image</h2>
+        <p >Upload the Cell Image to know which <strong>blood cell class</strong> it belongs to.</p>
+        <div class="form-container">
+            <form action="/predict" method="POST" enctype="multipart/form-data">
+                <label for="file">Upload Here:&nbsp;</label>
+                <input type="file" name="file" required><br><br>
+                <button type="Submit" value="Predict">Predict</button>
+            </form>
+        </div>
+        <hr>
+        <h2>Real World Application</h2>
+        <div>
+            <h4>Scenario 1: Automated Diagnostic Systems for Healthcare</h4>
+            <p>Integrating HematoVision into automated diagnostic systems in clinical settings can revolutionize blood analysis.
+            By using transfer learning, the system quickly adapts to the specifics of blood cell classification, capturing images of blood samples, classifying the cells in real-time, and generating detailed reports. 
+            This automation reduces the manual workload on pathologists, speeds up diagnostic processes, and ensures high accuracy in results, ultimately improving patient care and treatment efficiency.</p>
+        </div>
+        <div>
+            <h4>Scenario 2: Remote Medical Consultations</h4>
+            <p>HematoVision can be employed in telemedicine platforms to enhance remote consultations and diagnostics.
+                 With transfer learning, the model's ability to accurately classify blood cells from diverse sources is improved, allowing healthcare providers to upload blood cell images for automated analysis.
+                 This enables timely and accurate assessments without the need for in-person visits, facilitating better access to specialized medical expertise and improving healthcare delivery in remote or underserved areas.</p>
+        </div>
+        <div>
+            <h4>Scenario 3: Educational Tools for Medical Training</h4>
+            <p>HematoVision's transfer learning-based classification model can be integrated into educational tools for medical training. 
+                By incorporating this advanced technology into interactive learning platforms, students and laboratory technicians can upload and analyze blood cell images to receive instant feedback.
+                 This hands-on learning experience enhances their understanding of blood cell morphology and classification, providing practical skills and knowledge that are crucial for accurate diagnostic practice and medical training.</p>
+        </div>
+    </body>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3 style="text-decoration: none;color: #007bff;text-shadow: none;font-family: 'Courier New', Courier, monospace;">Goondam Ramalingam Venkat</h3>
+                <p>Data Science & Engineering Enthusiast</p>
+            </div>
+        <div class="footer-right">
+            <div class="social-icons">
+                <a href="http://github.com/grvenkat40" target="_blank"><img src="../static/asserts/github.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/venkatgr" target="_blank"><img src="../static/asserts/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/venkat_40_smart?igsh=MXNiNXdqcjlkZnloag==" target="_blank"><img src="../static/asserts/instagram.png" alt="Twitter"></a>
+                <a href="mailto:venkat2040gr@gmail.com"><img src="../static/asserts/gmail.png" alt="Gmail"></a>
+            </div>
+        </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Goondam Ramalingam Venkat. All rights reserved.</p>
+        </div>
+    </footer>
+</html>
