@@ -51,5 +51,9 @@ def predict():
     label,confidence=predict_image(file_path)
     return render_template('result.html',label=label,confidence=confidence,filename=filename)
 
-if __name__=='__main__':
-    app.run(debug=True)
+# if __name__=='__main__':
+#     app.run(debug=True)
+
+if __name__ == '__main__':
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=True, host="0.0.0.0", port=port)
