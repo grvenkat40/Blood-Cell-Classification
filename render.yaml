@@ -2,10 +2,9 @@ services:
   - type: web
     name: hemato-vision
     env: python
-    pythonVersion: "3.10"            # ← specify the version here
+    runtime: python3.10      # ← pin to Python 3.10 here
     buildCommand: pip install -r requirements.txt
     startCommand: python app.py
-
     envVars:
       - key: PORT
         value: 10000
