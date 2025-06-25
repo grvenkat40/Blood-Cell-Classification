@@ -2,9 +2,17 @@ from flask import Flask,render_template,redirect,url_for
 import numpy as np
 import cv2
 import os
+import gdown
 from flask import request
 from tensorflow.keras.models import load_model
 from werkzeug.utils import secure_filename
+
+
+MODEL_PATH = "Blood_Cell_PRED.h5"
+
+if not os.path.exists(MODEL_PATH):
+    gdown.download("https://drive.google.com/file/d/12Bbh3kaEBFsE2WLr3ymufSdu4bfi1WUr/view?usp=drive_link", MODEL_PATH, quiet=False)
+
 
 app=Flask(__name__)
 upload_folder='static/uploads'
