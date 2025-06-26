@@ -2,7 +2,7 @@ services:
   - type: web
     name: hemato-vision
     env: python
-    runtime: python3.10      # ← pin to Python 3.10 here
+    pythonVersion: python3.10      # ← pin to Python 3.10 here
     buildCommand: pip install -r requirements.txt
     startCommand: python app.py
     envVars:
