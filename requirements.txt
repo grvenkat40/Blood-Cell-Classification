@@ -1,11 +1,7 @@
-Flask==2.3.3
+flask==2.3.3
+tensorflow==2.10.0
+opencv-python
+gdown
 werkzeug==2.3.7
-tensorflow               # installs the latest TF compatible with Python 3.10
-opencv-python-headless
-numpy
-Pillow
-gdown
-gunicorn
 
-gdown
 

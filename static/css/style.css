@@ -18,10 +18,11 @@ body{
     background-color: #ebf8ff;
 }
 .main-header {
-    background-color: #f4f7f9;
+    background-image: url("../asserts/cell_bg.jpg");
     padding: 10px;
     text-align: center;
     border-bottom: 2px solid #007bff;
+    text-shadow: 1px 1px 4px #e2f72d; 
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
@@ -34,7 +35,7 @@ body{
 
 .header-subtitle {
     font-size: 18px;
-    color: #2c3e50;
+    color: #f9fcff;
     margin: 0;
 }
 marquee{
@@ -87,7 +88,7 @@ p{
 
 }
 #cell:hover{
-    transform: scale(1.03);
+    transform: rotate(20deg)scale(1.03)translate(20px);
 }
 .result_img{
     display: flex;
@@ -107,10 +108,14 @@ p{
     margin: auto 200px ;
 
 }
+#result_image{
+    transform: scale(1.2)translate(20deg);
+}
 #result_cell{
     border-radius: 15px;
     border-image: fill;
     box-shadow: 0 0 10px black;
+    transition: transform 0.4s
 }
 label{
     font-weight:900;
@@ -127,8 +132,15 @@ label{
 }
 input[type="file"] {
     margin-bottom: 20px;
+    background-color: #9f48e6;
+    padding: 10px;
+    color: #c5ebff;
+    transition: transform 0.4s;
+    cursor: pointer;
 }
-
+input:hover{
+    transform: translate(20px);
+}
 button {
     background-color: #9318f8;
     color: rgb(255, 255, 255);
@@ -138,11 +150,14 @@ button {
     font-size: 16px;
     cursor: pointer;
     font-weight: bolder;
+    transition: transform 0.4s ;
 }
 button:hover{
     background-color: rgb(215, 15, 255);
     color: rgb(0, 0, 0);
     transition: 0.3s ease-in-out;
+    transition: transform 0.3s ;
+    transform: scale(1.08)translate(20px);
 }
 
 footer {
