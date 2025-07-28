@@ -23,6 +23,8 @@ HematoVision is a web-based deep learning project that uses **transfer learning 
 
 ## UI
 <img width="1344" height="625" alt="UI" src="https://github.com/user-attachments/assets/b0347eac-370c-4f61-94ab-107e96280cd5" />
+<img width="1345" height="624" alt="ImageUploadSection" src="https://github.com/user-attachments/assets/e1f4e0d8-92a8-4267-8cba-249a2f5d9baf" />
+
 
 ## 🤖Prediction Page
 <img width="802" height="438" alt="output_prediction" src="https://github.com/user-attachments/assets/3ccb233a-64c6-4616-b994-f56d171a7381" />
