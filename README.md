@@ -14,6 +14,13 @@ HematoVision is a web-based deep learning project that uses **transfer learning 
 - 📥 Model auto-downloaded via gdown from Google Drive
 
 ---
+## 🔐 Login Page
+
+![Login Screenshot]("D:\OneDrive\Pictures\Screenshots\Screenshot 2025-06-27 202515.png")
+
+
+<img width="676" height="475" alt="Screenshot 2025-06-27 202515" src="https://github.com/user-attachments/assets/81deddd0-7f4c-47ff-ab98-c0d330bd715f" />
+
 
 ## 📂 Project Structure
 
