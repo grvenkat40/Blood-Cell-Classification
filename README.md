@@ -22,7 +22,7 @@ HematoVision is a web-based deep learning project that uses **transfer learning 
 
 ## 📂 Register Page
 
-![Login Screenshot]("D:\OneDrive\Pictures\Screenshots\Screenshot 2025-06-27 202641.png")
+![Register Screenshot]("D:\OneDrive\Pictures\Screenshots\Screenshot 2025-06-27 202641.png")
 
 ## 📂 Project Structure
 
