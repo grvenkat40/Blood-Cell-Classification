@@ -1,4 +1,4 @@
-<img width="1344" height="625" alt="UI" src="https://github.com/user-attachments/assets/cb74d33c-8b14-45e1-8e1c-90929845e361" /><img width="731" height="448" alt="registerPage" src="https://github.com/user-attachments/assets/0f2a5dfe-5d48-480d-bcc3-6f93f6c1ac3c" /># 🧠 HematoVision: Advanced Blood Cell Classification Using Transfer Learning
+🧠 HematoVision: Advanced Blood Cell Classification Using Transfer Learning
 
 HematoVision is a web-based deep learning project that uses **transfer learning (VGG16)** to classify human blood cells into five types: **Neutrophil**, **Lymphocyte**, **Monocyte**, **Eosinophil**, and **Basophil**. It is designed to assist medical professionals and labs by automating the process of blood cell classification from microscopic images.
 
